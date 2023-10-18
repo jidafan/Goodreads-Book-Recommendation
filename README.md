@@ -21,3 +21,23 @@ It includes data from three files **goodreads_books.json.gz**, which includes th
 | `userid`     | The number that uniquely identifies a user from the Goodreads website    |
 | `bookid`     | The number that uniquely identifies a book from the Goodreads website           |   
 | `rating` | The rating of a book assigned from a user on the Goodreads website                                         |
+
+## Methods
+
+The methods that we used in this project are:
+1. TFIDF Matrices
+2. Cosine Similarity
+3. Collaborative Filtering
+
+
+In this project, we used a TFIDF matrix to create a function that allows users to search for books, so we are able to create a list of books that are liked by the user. In conjunction with the TFIDF matrix, we use cosine similarity to find the exact book a user is looking for. As some books have the same names as others. Afterwards, we use coo matrices and cosine similarity to implement collaborative filtering to recommend books to the user, based on the likes of other users with similar tastes to us.
+
+## Results 
+
+After we input our list of liked books, we see that the reviews are heavily skewed towards fantasy novels, more specifically towards the "Harry Potter" series. 
+
+![image](https://github.com/jidafan/Goodreads-Book-Recommendation/assets/141703009/16975728-a190-43e4-ac59-d24d8d260a53)
+
+## Conclusion
+
+To conclude, the program did well in recommending books for us to read for the most part. It could be improved with a more extensive list of books to scan through. In addition we could improve the program, by asking for specific recommendations based on genre of the book.
